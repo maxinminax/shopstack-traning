@@ -9,5 +9,6 @@
 - Start dev enviroment: `npm run dev`
 - Add simple page component: /about
 
-- Graphql: https://graphql.org/
-- Ant design: https://ant.design/
+- Next day:
+  - Graphql: https://graphql.org/
+  - Ant design: https://ant.design/
