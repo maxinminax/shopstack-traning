@@ -1,9 +1,9 @@
 - Tools: nvm, visual studio code
 - Language/Libraries/framework: Javascript, Nodejs, Reactjs, Nextjs
--- Javascript: ES6 syntax (in previous slide)
--- Nodejs: Install module, start script (npm run ...), import, export
--- Reactjs: component, render function, props, states
--- Nextjs: page component
+  - Javascript: ES6 syntax (in previous slide)
+  - Nodejs: Install module, start script (npm run ...), import, export
+  - Reactjs: component, render function, props, states
+  - Nextjs: page component
 - Download project
 - Install dependencies: `npm install`
 - Start dev enviroment: `npm run dev`
