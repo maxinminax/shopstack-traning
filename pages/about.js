@@ -4,11 +4,11 @@ export default function About() {
   const list = ['Mr. A', 'Mrs. B', 'Mr. C']
   return (
     <div>
-      <Title title="About page" subtitle="shopstack" />
+      <Title>Shopstack title</Title>
       <ul>
       {
-        list.map((item) => {
-          return <li>- {item}</li>
+        list.map((item, index) => {
+          return <li key={index}>- {item}</li>
         })
       }
       </ul>

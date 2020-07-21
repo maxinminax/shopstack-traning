@@ -9,6 +9,27 @@
 - Start dev enviroment: `npm run dev`
 - Add simple page component: /about
 
-- Next day:
-  - Graphql: https://graphql.org/
+Day 2
+- Nextjs with less & ant design
   - Ant design: https://ant.design/
+  - next.config.js: https://github.com/vercel/next.js/tree/canary/examples/with-ant-design-less
+- Create home page with antd layout, divide home page component to sub/children component (AppHeader, AppSider)
+- Render menu from category list:
+  - Create lib api.js: import graphql-request, export function getCategoryList
+  - Call getCategoryList from next serverside data-fetching: https://nextjs.org/docs/basic-features/data-fetching#getserversideprops-server-side-rendering
+  - Render AppSider from category list data
+
+Day 3
+- Category page
+  - Create route for category page exp. `/categories/18?page=1` by create folder/file /categories/[cid].js
+  - Create api function `getCategory` in `/lib/api.js`
+  - Get param `cid` and query `page` in static function `getServerSideProps`
+  - Call `getCategory` api function in `getServerSideProps` of category page component
+  - Render category view
+- App layout
+  - Create AppLayout component: prop `children` of Component
+  - Use AppLayout in `/pages/_app.js` to change global layout ( mean apply for all page)
+- App context
+  - HOC: https://reactjs.org/docs/higher-order-components.html
+  - React hook useContext: https://reactjs.org/docs/hooks-reference.html#usecontext
+  - Components: AppContext, AppLayout, _app.js

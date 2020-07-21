@@ -1,5 +1,5 @@
-export default function Title({ title, subtitle = 'Shopstack company' }) {
+export default function Title({ children }) {
   return (
-    <div>Tiêu đề: {title} - {subtitle}</div>
+    <div>Tiêu đề: {children}</div>
   )
 }
