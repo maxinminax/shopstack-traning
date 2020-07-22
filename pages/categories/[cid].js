@@ -30,6 +30,8 @@ export async function getServerSideProps({ params, query }) {
     currentPage: query.page
   })
 
+  console.log(category)
+
   return {
     props: {
       category

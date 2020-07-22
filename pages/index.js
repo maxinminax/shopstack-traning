@@ -1,19 +1,11 @@
-import { getCategoryList } from '../lib/api'
+import { useContext } from 'react'
+import AppContext from '../components/common/AppContext'
 
-export default function Home({ categoryList }) {
+const Home = () => {
+  const { categoryList } = useContext(AppContext)
   return (
-    <code>{ JSON.stringify(categoryList, null, true) }</code>
+    <code>{ JSON.stringify(categoryList, null, 2) }</code>
   )
 }
 
-export async function getServerSideProps(context) {
-  const categoryList = await getCategoryList();
-  // getCategoryList().then((categoryList) => {})
-  // getCategoryList().then(function(categoryList) {})
-
-  return {
-    props: {
-      categoryList
-    }, // will be passed to the page component as props
-  }
-}
+export default Home 

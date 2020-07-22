@@ -20,6 +20,7 @@ Day 2
   - Render AppSider from category list data
 
 Day 3
+- Nextjs Link component: `next/link`
 - Category page
   - Create route for category page exp. `/categories/18?page=1` by create folder/file /categories/[cid].js
   - Create api function `getCategory` in `/lib/api.js`
@@ -31,5 +32,8 @@ Day 3
   - Use AppLayout in `/pages/_app.js` to change global layout ( mean apply for all page)
 - App context
   - HOC: https://reactjs.org/docs/higher-order-components.html
-  - React hook useContext: https://reactjs.org/docs/hooks-reference.html#usecontext
+  - React hook createContext, useContext: https://reactjs.org/docs/hooks-reference.html#usecontext
   - Components: AppContext, AppLayout, _app.js
+
+Day 4
+- Detail page: `/products/[productId]`

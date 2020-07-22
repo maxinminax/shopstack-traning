@@ -14,7 +14,7 @@ export default ({ product }) => {
     let { maximum_price, minimum_price } = price_range
     maximum_price = maximum_price.final_price;
     minimum_price = minimum_price.final_price;
-    if (maximum_price.value === minimum_price.currency && maximum_price.currency === minimum_price.currency) {
+    if (maximum_price.value === minimum_price.value && maximum_price.currency === minimum_price.currency) {
       return formatPrice(minimum_price)
     }
     return `${formatPrice(minimum_price)} - ${formatPrice(maximum_price)}`
