@@ -1,11 +1,7 @@
-import { useContext } from 'react'
-import AppContext from '../components/common/AppContext'
+import React from 'react'
 
 const Home = () => {
-  const { categoryList } = useContext(AppContext)
-  return (
-    <code>{ JSON.stringify(categoryList, null, 2) }</code>
-  )
+  return <div>HOME</div>
 }
 
-export default Home 
+export default Home

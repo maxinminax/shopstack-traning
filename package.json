@@ -1,5 +1,5 @@
 {
-  "name": "shopstack-training",
+  "name": "shopstack",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,12 +12,23 @@
     "antd": "^4.4.2",
     "babel-plugin-import": "^1.13.0",
     "graphql-request": "^2.0.0",
-    "less": "^3.12.2",
+    "less": "^3.11.3",
     "less-vars-to-js": "^1.3.0",
-    "next": "^9.4.4",
+    "next": "9.4.4",
+    "next-compose-plugins": "^2.2.0",
     "null-loader": "^4.0.0",
     "numeral": "^2.0.6",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "universal-cookie": "^4.0.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.4",
+    "prettier": "^2.0.5"
   }
 }

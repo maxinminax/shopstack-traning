@@ -37,3 +37,13 @@ Day 3
 
 Day 4
 - Detail page: `/products/[productId]`
+- Register
+  - Register page: `/register`
+  - Form submit: call api register
+  - Success: redirect to `/`
+  - Fail: set errors to state
+- Login
+  - Login page: `/login` login.js
+  - Form submit: call api login
+  - Login success: set token which received to cookie -> get customer profile -> set customer profile to AppContext
+  - Login fail: set errors to state
